@@ -1,6 +1,7 @@
 const express = require('express')
-const app = express()
+const app = express();
 const cors = require('cors');
+const path = require('path');
 
 app.use(cors());
 
@@ -8,9 +9,29 @@ app.get('/', (req, res) => {
     res.send('Hello this is Googlarachi!');
 });
 
+//array of webpages
+const webpages = [
+    "https://www.indomie.co.uk/", "https://www.samyangfoods.com/eng/index.do", "https://www.samyangfoods.com/eng/index.do", "https://www.koreafoods.co.uk/brand/ottogi/",
+     "http://eng.nongshim.com/main/index", "https://nissinnoodles.co.uk/collections/ramen-noodles", "https://www.primataste.com/recipes/laksa-lamian", 
+     "https://www.orientalmart.co.uk/bai-jia-chongqing-burning-dry-noodles-hot-and-sour-flavour", 
+     "https://nongshimusa.com/homev2/bowl-noodle/chapaguri/", "https://www.potnoodle.com/"
+];
+
 //add functionality for returning search results -> send searchpage.html?
+app.get('/search', (req,res) => {
+    const pathUrl = path.join(__dirname, '..', 'Client', 'Assets', 'Search Page', 'index.html')
+    res.sendFile(pathUrl);
+})
 
-//add functionality for sending a random webpage result
-
+//function to return random webpage from webpages array
+const randomPage = () => {
+    const randomNum = Math.floor(Math.random() * webpages.length);
+    return webpages[randomNum];
+};
+//redirecting user to a random webpage 
+app.get('/random', (req,res) => {
+    const selectedPage = randomPage();
+    res.status(301).redirect(selectedPage);
+});
 
 module.exports = app; 

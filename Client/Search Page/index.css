@@ -2,3 +2,21 @@ body {
   font-size: 14px;
   font-family: arial, sans-serif;
 }
+
+.container-recipes {
+  padding-left: 178px;
+}
+
+nav {
+  padding-left: 160px;
+}
+
+.logo {
+  position: relative;
+  right: 160px;
+}
+
+.searchbar{
+  position: relative;
+  right: 162px;
+}

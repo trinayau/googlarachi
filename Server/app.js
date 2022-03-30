@@ -2,6 +2,8 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const path = require('path');
+const fs = require("fs");
+
 
 app.use(cors());
 
@@ -18,9 +20,16 @@ const webpages = [
 ];
 
 //add functionality for returning search results -> send searchpage.html?
+
+
 app.get('/search', (req,res) => {
-    const pathUrl = path.join(__dirname, '..', 'Client', 'Assets', 'Search Page', 'index.html')
-    res.sendFile(pathUrl);
+    try {
+    res.send(path.join(__dirname, '..', 'Client', 'Assets', 'Search Page','search.html'));
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("tried to retrieve path")
+    }
 })
 
 //function to return random webpage from webpages array
@@ -30,8 +39,8 @@ const randomPage = () => {
 };
 //redirecting user to a random webpage 
 app.get('/random', (req,res) => {
-    const selectedPage = randomPage();
-    res.status(301).redirect(selectedPage);
+    const selectedPage = randomPage(); //selectedpage = "ramen URL" from webpages index
+    res.send(selectedPage);
 });
 
 module.exports = app; 

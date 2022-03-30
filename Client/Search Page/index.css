@@ -1,14 +1,14 @@
-.search1 { grid-area: main;
-  ;
-}
-.search2 { grid-area: main; 
-}
-.search3 { grid-area: main;
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Passions+Conflict&family=Roboto:wght@100&display=swap');
 
+body{
+  
 }
-.search4 { grid-area: main; 
 
-}
+
+
+
+
+
 
 .grid-container {
 display: grid;
@@ -36,4 +36,7 @@ background-color: rgba(255, 255, 255, 0.8);
 text-align: center;
 padding: 20px 0;
 font-size: 30px;
+}
+body{
+  
 }

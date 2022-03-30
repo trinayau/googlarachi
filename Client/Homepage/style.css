@@ -14,12 +14,16 @@ input[type="text"] {
 input[type="text"]:hover {
     border: none;
     box-shadow: 1px 1px 6px 1px darkgray;
+    outline-style: none;
+    border-color: transparent;
+
 };
 
-input:focus {
+input[type="text"]:focus {
     border: none;
-    box-shadow: 1px 1px 6px 1px darkgray;
-    outline: none;
+    outline-style: none;
+    border-color: transparent;
+
 };
 
 

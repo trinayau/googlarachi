@@ -6,8 +6,10 @@ const luckyBtn = document.getElementById("luckyBtn");
 //Search button flow
 const searchFunc = async() => {
     //click and show search results page
-  const response = await fetch('http://localhost:3000/search');
-  document.location.href = '../Search Page/search.html'
+
+  // const url = await response.text();
+   window.location.replace('../Search Page/index.html')
+
 
   //window.location.href = response;
 };

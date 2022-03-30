@@ -2,14 +2,16 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const path = require('path');
-const fs = require("fs");
+const io = require('socket.io')(server);
+
 
 
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.send('Hello this is Googlarachi!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello this is Googlarachi!');
+// });
 
 //array of webpages
 const webpages = [
@@ -21,16 +23,19 @@ const webpages = [
 
 //add functionality for returning search results -> send searchpage.html?
 
+app.get('/', (req,res) => {
+res.send("Googlarachi")
+});
 
 app.get('/search', (req,res) => {
     try {
-    res.send(path.join(__dirname, '..', 'Client', 'Assets', 'Search Page','search.html'));
+        
     } catch(error) {
         console.error(error);
     } finally {
         console.log("tried to retrieve path")
     }
-})
+});
 
 //function to return random webpage from webpages array
 const randomPage = () => {

@@ -1,4 +1,39 @@
-.elongate{
-    max-width: 400px;
-  width: 100%;
+.search1 { grid-area: main;
+  ;
+}
+.search2 { grid-area: main; 
+}
+.search3 { grid-area: main;
+
+}
+.search4 { grid-area: main; 
+
+}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+'main'
+'main'
+'main'
+'main'
+'main'
+'main'
+'main'
+'main'
+'main'
+'main'
+;
+gap: 10px;
+background-color: #2196F3;
+padding: 10px;
+grid-template-rows: 60px 250px 320px;
+
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
 }

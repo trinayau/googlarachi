@@ -19,8 +19,14 @@ const webpages = [
 
 //add functionality for returning search results -> send searchpage.html?
 app.get('/search', (req,res) => {
+    try {
     const pathUrl = path.join(__dirname, '..', 'Client', 'Assets', 'Search Page', 'index.html')
     res.sendFile(pathUrl);
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("tried to retrieve path")
+    }
 })
 
 //function to return random webpage from webpages array
@@ -30,8 +36,8 @@ const randomPage = () => {
 };
 //redirecting user to a random webpage 
 app.get('/random', (req,res) => {
-    const selectedPage = randomPage();
-    res.status(301).redirect(selectedPage);
+    const selectedPage = randomPage(); //selectedpage = "ramen URL" from webpages index
+    res.send(selectedPage);
 });
 
 module.exports = app; 

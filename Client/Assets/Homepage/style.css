@@ -1,0 +1,14 @@
+.searchbar {
+    position: relative;
+    top: 160px;
+    left: 410px;
+}
+
+input[type="text"] {
+    margin-right: 3px;
+    padding-right: 100px;
+}
+
+button {
+    margin-right: 3px;
+}

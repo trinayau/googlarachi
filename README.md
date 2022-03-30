@@ -1,2 +1,4 @@
-# googlarachi
-Google replica by Amarachi @umeloha
+# Googlarachi
+Google replica with Amarachi @umeloha and Trina
+
+## 

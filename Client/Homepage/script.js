@@ -7,7 +7,7 @@ const luckyBtn = document.getElementById("luckyBtn");
 const searchFunc = async() => {
     //click and show search results page
   const response = await fetch('http://localhost:3000/search');
-  window.location.href = '../Search Page/search.html'
+  document.location.href = '../Search Page/search.html'
 
   //window.location.href = response;
 };

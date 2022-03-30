@@ -2,9 +2,6 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const path = require('path');
-const io = require('socket.io')(server);
-
-
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));

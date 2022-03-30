@@ -2,6 +2,8 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const path = require('path');
+const fs = require("fs");
+
 
 app.use(cors());
 
@@ -18,10 +20,11 @@ const webpages = [
 ];
 
 //add functionality for returning search results -> send searchpage.html?
+
+
 app.get('/search', (req,res) => {
     try {
-    const pathUrl = path.join(__dirname, '..', 'Client', 'Assets', 'Search Page', 'index.html')
-    res.sendFile(pathUrl);
+    res.send(path.join(__dirname, '..', 'Client', 'Assets', 'Search Page','search.html'));
     } catch(error) {
         console.error(error);
     } finally {

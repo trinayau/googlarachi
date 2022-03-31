@@ -72,36 +72,21 @@ button {
   }
 
   .leaf {
-      position:relative;
+      position:absolute;
       right: 650px;
   }
 
-  .uk-nav {
-      position: relative;
-      top: 306px;
-      border-bottom:1px solid lightgray;
-  }
+  
 
   .looking-glass {
-    margin-top: 3px;
     color: #9aa0a6;
     height: 20px;
     width: 20px;
-    display: inline-block;
+    width: 1.8rem;
+    opacity: 0.3;
     position: relative;
-    left: 520px;
-    top: 35px;
-    cursor: pointer;
-  }
-
-  .microphone {
-    height: 24px;
-    width: 24px;
-    vertical-align: middle;
-    cursor: pointer;
-    position: absolute;
-    bottom: 415px;
-    left: 955px;
+    right: 220px;
+    top: 35px; 
   }
 
   .userimg{
@@ -117,3 +102,27 @@ button {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
     cursor: pointer;
 }
+
+.voice{
+    height:20px;
+    position:relative;
+    bottom: 33px;
+    text-align: center;
+    left: 225px;
+  }
+
+  /*Styling bottom nav bars */
+
+  .uk-nav {
+    position: absolute;
+    top: 97px;
+    border-bottom:1px solid lightgray;
+    width: 100%;
+  height: auto;
+}
+
+  .bottombars {
+      position: relative;
+  }
+
+  

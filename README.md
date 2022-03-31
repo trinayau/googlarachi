@@ -45,3 +45,13 @@ Navigate to index.html in Client folder/Homepage and open webpage
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
+* Node
+* Express
+
+## Wins and Challenges
+### Wins
+* Connected front end and server for the lucky button
+* Styled homepage and search pages similarly to original
+### Challenges
+* Making API call with search page button

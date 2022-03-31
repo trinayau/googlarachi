@@ -89,7 +89,7 @@ button {
     width: 20px;
     display: inline-block;
     position: relative;
-    left: 730px;
+    left: 520px;
     top: 35px;
     cursor: pointer;
   }
@@ -99,9 +99,9 @@ button {
     width: 24px;
     vertical-align: middle;
     cursor: pointer;
-    position: relative;
-    bottom: 125px;
-    left: 1170px;
+    position: absolute;
+    bottom: 415px;
+    left: 955px;
   }
 
   .userimg{

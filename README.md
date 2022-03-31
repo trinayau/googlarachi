@@ -55,3 +55,13 @@ Navigate to index.html in Client folder/Homepage and open webpage
 * Styled homepage and search pages similarly to original
 ### Challenges
 * Making API call with search page button
+
+## Bugs
+* Not responsive
+
+## Future Features
+* Make responsive
+
+## Final
+Final homepage:
+![Homepage](Client/Assets/Images/homepage.png)

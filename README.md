@@ -49,6 +49,10 @@ Navigate to index.html in Client folder/Homepage and open webpage
 * Node
 * Express
 
+## Process
+![Kanban](Client/Assets/Images/kanban.png)
+We discussed different elements of the project and made a GitHub project Kanban board for it. We assigned each other tasks and communicated throughout the process.
+
 ## Wins and Challenges
 ### Wins
 * Connected front end and server for the lucky button
@@ -57,11 +61,17 @@ Navigate to index.html in Client folder/Homepage and open webpage
 * Making API call with search page button
 
 ## Bugs
-* Not responsive
+* Not responsive -- Homepage now responsive
 
 ## Future Features
-* Make responsive
+* Make responsive -- Now responsive
 
 ## Final
 Final homepage:
 ![Homepage](Client/Assets/Images/homepage.png)
+
+Final search results page:
+![Search results](Client/Assets/Images/search.png)
+
+## Peer Review
+@WalkingZ3d Dan and @THAYAANS Thayaan kindly peer reviewed our code for us.

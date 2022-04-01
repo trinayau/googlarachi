@@ -74,4 +74,4 @@ Final search results page:
 ![Search results](Client/Assets/Images/search.png)
 
 ## Peer Review
-@WalkingZ3d Dan and @THAYAANS Thayaan kindly peer reviewed our code for us.
+@WalkingZ3d Dan and @THAYAANS Thayaan kindly peer reviewed our code for us. This can be seen on the peer review feedback branch.
